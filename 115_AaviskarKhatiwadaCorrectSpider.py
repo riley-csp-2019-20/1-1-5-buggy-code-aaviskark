@@ -22,8 +22,17 @@ while (loop < legs):
   drawer.setheading(angle*loop-60)
   drawer.forward(length)
   loop = loop + 1
-  
+eye= 0
+drawer.pencolor("green")
+drawer.penup()
+drawer.goto(-10,20)
+drawer.pendown()
+drawer.circle(10)
 drawer.hideturtle()
+drawer.penup()
+drawer.goto(10,0)
+drawer.pendown()
+drawer.circle(10)
 
 wn = trtl.Screen()
 wn.mainloop()
